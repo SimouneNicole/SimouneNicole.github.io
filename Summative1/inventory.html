@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Systems</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: center;
+        }
+        th.header {
+            background-color: #aed6f1 ;
+            color: #000000;
+        }
+        tr.column-headers th {
+            background-color: #ccd1d1;
+            color: #000000;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+        .quantity {
+            text-align: center;
+            vertical-align: middle;
+            width: 120px;
+        }
+        .supplier {
+            text-align: center;
+            vertical-align: middle;
+            background-color: #FFD966;
+            font-weight: bold;
+        }
+        .date {
+            text-align: center;
+            vertical-align: middle;
+            width: 150px;
+        }
+        .low-stock {
+            color: #ff0900;
+        }
+        .image-cell {
+            padding: 0;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+        .product-name {
+            text-align: left;
+            width: 250px;
+        }
+        .name-column {
+            width: 250px;
+        }
+        .quantity-column {
+            width: 120px;
+        }
+        .date-column {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+  <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <th colspan="6" class="header">INVENTORY SYSTEMS</th>
+        </tr>
+        <tr class="column-headers">
+            <th>ID</th>
+            <th class="name-column">Name</th>
+            <th class="quantity-column">Quantity</th>
+            <th>Supplier</th>
+            <th class="date-column">Date</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td>10001</td>
+            <td class="product-name">Boy Bawang Adobo (pc)</td>
+            <td class="quantity">1000</td>
+            <td class="supplier" rowspan="8">KSK</td>
+            <td class="date" rowspan="2">5/14/2019</td>
+            <td class="image-cell" rowspan="8"><img src="https://foodisgood.com/_next/image/?url=https%3A%2F%2Fimages.heb.com%2Fis%2Fimage%2FHEBGrocery%2F000974844-1&w=750&q=75" alt="Boy Bawang Garlic"></td>
+        </tr>
+        <tr>
+            <td>10002</td>
+            <td class="product-name">Boy Bawang Adobo (pack)</td>
+            <td class="quantity">200</td>
+        </tr>
+        <tr style="background-color: #ccd1d1;">
+            <td>10003</td>
+            <td class="product-name">Boy Bawang Garlic (pc)</td>
+            <td class="quantity">3000</td>
+            <td class="date" rowspan="2">5/15/2019</td>
+        </tr>
+        <tr style="background-color: #ccd1d1;">
+            <td>10004</td>
+            <td class="product-name">Boy Bawang Garlic (pack)</td>
+            <td class="quantity low-stock">150</td>
+        </tr>
+        <tr>
+            <td>10005</td>
+            <td class="product-name">Boy Bawang Spicy (pc)</td>
+            <td class="quantity">4000</td>
+            <td class="date" rowspan="2">5/16/2019</td>
+        </tr>
+        <tr>
+            <td>10006</td>
+            <td class="product-name">Boy Bawang Spicy (pack)</td>
+            <td class="quantity">240</td>
+        </tr>
+        <tr style="background-color: #ccd1d1;">
+            <td>10007</td>
+            <td class="product-name">Boy Bawang BBQ (pc)</td>
+            <td class="quantity">3000</td>
+            <td class="date" rowspan="2">5/17/2019</td>
+        </tr>
+        <tr style="background-color: #ccd1d1;">
+            <td>10008</td>
+            <td class="product-name">Boy Bawang BBQ (pack)</td>
+            <td class="quantity">210</td>
+        </tr>
+    </table> 
+</body>
+</html>
