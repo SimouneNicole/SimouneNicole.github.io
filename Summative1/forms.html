@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <style>
+        ul {
+        list-style-type: none; 
+        }
         input, textarea {
-            width: 100%;
+            width: 75%;
             padding: 8px;
             margin-top: 4px;
             margin-bottom: 12px;
@@ -57,11 +60,7 @@
                 <label for="message">Message</label><br>
                 <textarea id="message" name="message" rows="5"></textarea>
             </li>
-            <li class="note">
-                <ul>
-                    <li>required field*</li>
-                </ul>
-            </li>
+            <li>required field*</li>
             <li style="margin-top: 8px;">
                 <button type="submit">Send</button>
             </li>
